@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@font-face {
+    font-family: fontfamily;
+    src: url('./fonts/Aerotis.ttf') format('opentype');
+  }
+
+*{
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:visited{
+    color: black;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.logo{
+    padding-top: 20px;
+    height: 150px;   
+}
+
+.lista{
+    padding-left: 15px;
+    display: flex;
+    gap: 5vw;
+    font-size: 1.9em;
+    margin: 10px 0 10px 0;
+    
+}
+
+.lista a{
+    color: #013b21;
+}
+
+.lista a:hover{
+    color: #678C42;
+}
+
+footer button{
+    height: 80px;
+    width: 265px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #49e083;
+    color:black;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.075);
+}
+
+footer button:hover{
+    background-color: #00723E;
+    color: white;
+    
+}
+
+
+footer button img{
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+
+#sobre{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-image: url(./image/bakcground-sobre.jpg);
+    background-size: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-bottom: 40px;
+
+}
+
+.nutri{
+    height: 600px;
+}
+
+.left{
+    border-radius: 10px;
+    background-color: #49e083;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.075);   
+    transition: transform 1s, opacity 0.3s; 
+}
+
+.block{
+    display: flex;
+    flex-direction: column; 
+    max-width: 400px;
+    align-items: center;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 15px;
+    
+}
+
+
+.block h1{
+    text-align: center;
+    font-size: 2.5em;
+    font-family: Aerotis;
+}
+
+.text_sobre{
+    font-size: 1.2em;
+    padding-bottom: 20px;
+    margin: 0 10px 0 10px;
+}
+
+.CRN{
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.whats{
+    height: 90px;
+    position: absolute;
+    bottom: 1%;
+    right: 2vw;
+}*/
+
+@media screen and (max-width: 900px) {
+    footer{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .left{
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+    .block h1{
+        font-size: 2.1em;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #sobre{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .left{
+        margin-right: 15px;
+    }
+
+    
+}
