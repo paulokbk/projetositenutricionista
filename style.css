@@ -98,7 +98,7 @@ footer button img{
 
 .left{
     border-radius: 10px;
-    background-color: #49e083;
+    background-image: linear-gradient(to left , #49e083, #02a85d);
     box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.075);   
     transition: transform 1s, opacity 0.3s; 
 }
@@ -130,6 +130,18 @@ footer button img{
 .CRN{
     margin-bottom: 25px;
 }
+
+#planos h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
 
 
 
