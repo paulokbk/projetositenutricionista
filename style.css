@@ -21,9 +21,9 @@ a:visited{
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-right: 15px;
+    padding-right: 15px;
 }
 
 .logo{
@@ -42,10 +42,11 @@ footer{
 
 .lista a{
     color: #013b21;
+    border-bottom: 1px solid #02020252;
 }
 
 .lista a:hover{
-    color: #678C42;
+    color: #39d6bc;
 }
 
 footer button{
@@ -53,7 +54,7 @@ footer button{
     width: 265px;
     border-style: none;
     border-radius: 10px;
-    background-color: #49e083;
+    background-color: #39d6bc;
     color:black;
     font-size: 1.5em;
     cursor: pointer;
@@ -64,7 +65,7 @@ footer button{
 }
 
 footer button:hover{
-    background-color: #00723E;
+    background-color: #258f7d;
     color: white;
     
 }
@@ -98,7 +99,7 @@ footer button img{
 
 .left{
     border-radius: 10px;
-    background-image: linear-gradient(to left , #49e083, #02a85d);
+    background-image: linear-gradient(to right , #258f7d, #39d6bc);
     box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.075);   
     transition: transform 1s, opacity 0.3s; 
 }
@@ -114,7 +115,6 @@ footer button img{
     
 }
 
-
 .block h1{
     text-align: center;
     font-size: 2.5em;
@@ -122,7 +122,7 @@ footer button img{
 }
 
 .text_sobre{
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding-bottom: 20px;
     margin: 0 10px 0 10px;
 }
@@ -131,18 +131,104 @@ footer button img{
     margin-bottom: 25px;
 }
 
-#planos h2{
-    text-align: center;
+#modoDeTrabalho{
+    margin-top: 40px;
 }
 
-.container{
+#modoDeTrabalho img{
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.075);   
+    width: 90px;
+}
+
+#modoDeTrabalho h2{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.containerCard{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#planos h2{
+    text-align: center;
+    text-align: center;
+    padding: 30px 0 40px 0;
+    font-size: 1.5em;
+}
+
+.planosTrabalho{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+    justify-content: space-around; 
+}
+
+.box{
+    max-width: 400px;
 }
 
 
+#modoDeTrabalho h2{
+    text-align: center;
+    padding: 30px 0 40px 0;
+}
+*/
 
 
 
@@ -174,13 +260,13 @@ footer button img{
 
 
 
-
-/*.whats{
-    height: 90px;
-    position: absolute;
-    bottom: 1%;
-    right: 2vw;
-}*/
+@media screen and (max-width: 1400px){
+    .containerCard{
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+}
 
 @media screen and (max-width: 900px) {
     footer{
@@ -196,6 +282,10 @@ footer button img{
         font-size: 2.1em;
     }
 
+    footer{
+        padding-right: 0;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -209,5 +299,9 @@ footer button img{
         margin-right: 15px;
     }
 
+    .lista{
+        flex-direction: column;
+        align-items: center;
+    }
     
 }
