@@ -27,7 +27,7 @@ a:visited{
     color: black;
 }
 
-footer{
+header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -57,7 +57,7 @@ footer{
     color: #39d6bc;
 }
 
-footer button{
+header button{
     height: 80px;
     width: 265px;
     border-style: none;
@@ -73,14 +73,14 @@ footer button{
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.075);
 }
 
-footer button:hover{
+header button:hover{
     background-color: #9cb149;
     color: white;
     
 }
 
 
-footer button img{
+header button img{
     height: 40px;
     padding-right: 10px;
     padding-left: 5px;
@@ -281,7 +281,7 @@ footer button img{
 
 }
 @media screen and (max-width: 1100px){
-    footer{
+    header{
         flex-direction: column;
         gap: 15px;
     }
@@ -297,7 +297,7 @@ footer button img{
         align-items: center;
     }
 
-    footer{
+    header{
         padding: 0;
     }
     
@@ -326,7 +326,7 @@ footer button img{
         font-size: 1.1em;
     }
      
-    footer button{
+    header button{
         width: 80vw;
         margin: 0;
 
