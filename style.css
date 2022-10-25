@@ -229,6 +229,7 @@ header button img{
 
 #planos .cards{
     max-width: 400px;
+    min-width: 400px;
 }
 
 #contato{
