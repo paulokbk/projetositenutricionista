@@ -27,6 +27,52 @@ body, html{
 a:visited{
     color: black;
 }
+@keyframes buton {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes myAnim2 {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes button {
+	0% {
+		opacity: 1;
+		transform: translateY(-30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
 header{
     display: flex;
@@ -57,7 +103,7 @@ header{
 }
 
 .lista a:hover{
-    color: #39d6bc;
+    animation: buton 1s ease-out 0s 1 normal both;
 }
 
 header button{
@@ -77,8 +123,9 @@ header button{
 }
 
 header button:hover{
-    background-color: #9cb149;
+    background-color: #25a94a;
     color: white;
+    transition: background-color 1000ms linear;
     
 }
 
@@ -106,6 +153,7 @@ header button img{
 .nutri{
     width: 600px;
     transform: translateY(45px);
+    animation: myAnim2 1s ease-out 0s 1 normal both;
 }
 
 .left{
@@ -113,6 +161,7 @@ header button img{
     color: white;
     background-image: linear-gradient(to right , #c07f89, #d498a1);
     box-shadow: -60px 16px #a1666f;
+    animation: myAnim 1s ease-out 0s 1 normal both;
    
 }
 
@@ -133,12 +182,14 @@ header button img{
     text-justify: inter-word;
     margin: 15px;
     
+    
 }
 
 .block h1{
     text-align: center;
     font-size: 2.5em;
-    font-family: Aerotis;
+    font-family: 'Parisienne', cursive;
+
 }
 
 .text_sobre{
@@ -180,6 +231,14 @@ header button img{
     color: #ffff;
 }
 
+.card-in{
+    animation: myAnim 1s ease-out 0s 1 normal both;
+}
+
+.card-out{
+    animation: myAnim2 1s ease-out 0s 1 normal both;
+}
+
 .cards{
     max-width: 500px;
     display: flex;
@@ -192,6 +251,10 @@ header button img{
     background-color: #ffff;
     border-radius: 10px;
     box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.19);
+}
+
+.cards:hover{
+    animation: button 1.5s ease-out 0s 1 normal both;
 }
 
 
