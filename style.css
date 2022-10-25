@@ -99,11 +99,11 @@ header{
 
 .lista a{
     color: #ffff;
-    border-bottom: 1px solid #02020252;
+
 }
 
 .lista a:hover{
-    animation: buton 1s ease-out 0s 1 normal both;
+    color: #107f2e;
 }
 
 header button{
